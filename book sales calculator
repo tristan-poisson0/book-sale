@@ -1,0 +1,9 @@
+Scanner checkout = new Scanner(System.in);
+        System.out.println("Enter book price: ");
+        System.out.println("Enter number of books: ");
+        int bookPrice = checkout.nextInt();
+        int totalBooks = checkout.nextInt();
+        double tax = bookPrice * .075;
+        int shippingCharge = totalBooks * 2;
+        double totalPrice = (bookPrice * totalBooks) + tax + shippingCharge;
+        System.out.println(totalPrice);
